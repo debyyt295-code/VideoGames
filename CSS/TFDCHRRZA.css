@@ -1,0 +1,358 @@
+* { 
+  margin: 0px; 
+  padding: 0px; 
+}
+
+#cabeceralogo { 
+  width: 96%;
+  height: 350px; 
+  padding: 0% 2%; 
+  padding: 40px 2%; 
+  background-image: url("../Imagenes/GIF/The Legend of Zelda Fairy.gif"); 
+  background-size: cover; 
+  background-position: center;
+} 
+
+#cabeceralogo > div { 
+  width: 960px; 
+  margin: 0px auto; 
+  padding-top: 0px; 
+} 
+
+@font-face { 
+  font-family: '2 Press Start 2P'; 
+  src: url('../FONT/PressStart2P-Regular.ttf') format('truetype'); 
+}
+
+#cabeceralogo h1 { 
+  font-family: '2 Press Start 2P', cursive; 
+  color: #FFFFFF; 
+  margin-top: 90px;
+  line-height: 1.2; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+} 
+
+#gif-fondo {
+    background-image: url("../Imagenes/GIF/Nintendo Switch Link.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#listamenu > li { 
+  font: bold 18px Arial, sans-serif; 
+  color: #333333; 
+  position: relative; 
+  display: inline-block;
+  width: 180px; 
+  height: 35px; 
+  padding: 15px 10px 0px 10px; 
+  margin-right: 5px;
+  text-align: center; 
+} 
+
+#listamenu li > ul { 
+  display: none; 
+  position: absolute; 
+  top: 50px;
+  left: 0px; 
+  background-color: rgb(103, 191, 56); 
+  box-shadow: 3px 3px 5px rgba(39, 146, 39, 0.7); 
+  border-radius: 0px 0px 5px 5px; 
+  list-style: none; 
+  z-index: 1000;
+}
+
+#listamenu li > ul > li { 
+  width: 180px; 
+  height: 50px; 
+  padding-top: 15px; 
+  padding-left: 10px; 
+} 
+
+#listamenu li:hover ul { 
+  display: block; 
+}
+
+#menuprincipal { 
+  width: 96%;
+  height: 50px; 
+  margin-top: -100px;
+  padding: 0% 2%; 
+  background-color: #41a732; 
+  border-top: 1px solid #096009; 
+  border-bottom: 1px solid #09600f; 
+} 
+
+#menuprincipal > div { 
+  width: 960px; 
+  margin: 0px auto; 
+} 
+
+#menuprincipal li { 
+  display: inline-block; 
+  height: 35px; 
+  padding: 15px 10px 0px 10px; 
+  margin-right: 5px; 
+} 
+
+#menuprincipal li:hover { 
+  background-color: #36de4f;
+  height: 40px;
+  border-radius: 12px;
+} 
+
+#menuprincipal a { 
+  font: bold 18px Arial, sans-serif; 
+  color: #333333; 
+  text-decoration: none;
+} 
+
+#infoadicional { 
+    margin-top: -700px;
+    margin-right: -200px;
+    margin-left: 150px;
+  float: right; 
+  width: 260px; 
+  padding: 20px; 
+  background-color: #7cfd856c; 
+  border-radius: 10px; 
+} 
+
+#infoadicional h1 { 
+  font: bold 18px Arial, sans-serif; 
+  color: #333333; 
+  margin-bottom: 15px; 
+} 
+
+#infoadicional p {
+  font: 14px Arial, sans-serif;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.tarjeta-contenedor {
+    margin-top: -250px;
+    width: 500px;
+    height: 750px;
+    perspective: 1000px;
+    z-index: 10;
+}
+
+.tarjeta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.tarjeta-contenedor:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-frente,
+.tarjeta-atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.tarjeta-frente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-atras {
+    background: #0b7e2e;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tarjeta-atras h2 {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta-atras p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#pielogo { 
+  width: 96%; 
+  padding: 2%; 
+  background-color: #0fa022;
+} 
+
+#pielogo > div { 
+  width: 960px; 
+  margin: 0px auto; 
+  background-color: #99f391; 
+  border-radius: 10px; 
+}
+
+.seccionpie { 
+  float: left; 
+  width: 27.33%; 
+  padding: 3%; 
+} 
+
+.seccionpie h1 { 
+  font: bold 20px Arial, sans-serif; 
+  color: #09600d;
+  margin-bottom: 10px;
+} 
+
+.seccionpie p { 
+  margin-top: 5px; 
+} 
+
+.seccionpie a { 
+  font: bold 16px Arial, sans-serif; 
+  color: #444444; 
+  text-decoration: none; 
+} 
+
+.seccionpie a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.recuperar {
+  clear: both;
+}
+
+.menu-juegos{
+    position: relative;
+}
+
+.lista-juegos{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 220px;
+    height: 250px;
+
+    overflow-y: auto;
+
+    background: #41a732;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+
+    z-index: 9999; 
+}
+
+.menu-juegos:hover .lista-juegos{
+    display: block;
+}
+
+/*menu de información*/
+
+.menu-informacion{
+    position: relative;
+}
+
+.lista-informacion{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 220px;
+    height: 250px;
+
+    overflow-y: auto;
+
+    background: #41a732;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+
+    z-index: 9999; 
+}
+
+.menu-informacion:hover .lista-informacion{
+    display: block;
+}
+
+/* Colocaré música de los videojuegos para que de con el tema*/
+
+button{
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 12px 28px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: rgba(196, 229, 172, 0.6);
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.85);
+}
+
+button:hover{
+  background: rgba(184, 238, 173, 0.85);
+}
+
+.music-box{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(132, 235, 134, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 10px 14px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  z-index: 9999;
+  font: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.music-box button{
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.music-box input[type="range"]{
+  vertical-align: middle;
+}
+
+#tiempo{
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: black;
+}
+
+#barraMusica{
+  width: 220px;
+  cursor: pointer;
+}

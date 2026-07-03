@@ -1,0 +1,291 @@
+* { 
+  margin: 0px; 
+  padding: 0px; 
+} 
+
+body { 
+  background-color: black; 
+  width: 100%;
+}
+
+#cabeceralogo { 
+  width: 96%;
+  height: 350px; 
+  margin-left: 0px;
+  padding: 0% 2%; 
+  padding: 40px 2%; 
+  background-image: url("../Imagenes/GIF/The Legend of Zelda Link.gif"); 
+  background-size: cover; 
+  background-position: center;
+} 
+
+#cabeceralogo > div { 
+  width: 960px; 
+  margin: 0px auto; 
+  padding-top: 0px; 
+} 
+
+@font-face { 
+  font-family: '2 Press Start 2P'; 
+  src: url('../FONT/PressStart2P-Regular.ttf') format('truetype'); 
+}
+
+#cabeceralogo h1 { 
+  font-family: '2 Press Start 2P', cursive; 
+  color: #FFFFFF; 
+  margin-top: 90px;
+  line-height: 1.2; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+} 
+
+#gif-fondo{
+    background-image:url("../Imagenes/GIF/Super Mario Space.gif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    padding:50px 0;
+    display:flex;
+    justify-content:center;
+}
+
+#menuprincipal { 
+  width: 96%;
+  height: 50px; 
+  margin-top: -100px;
+  padding: 0% 2%; 
+  background-color: #9FC8D9;  
+} 
+
+#menuprincipal > div { 
+  width: 960px; 
+  margin: 0px auto; 
+} 
+
+#menuprincipal li { 
+  display: inline-block; 
+  height: 35px; 
+  padding: 15px 10px 0px 10px; 
+  margin-right: 5px; 
+} 
+
+#menuprincipal li:hover { 
+  background-color: #a9e5ff; 
+  border-radius: 12px;
+} 
+
+#menuprincipal a { 
+  font: bold 18px Arial, sans-serif; 
+  color: #333333; 
+  text-decoration: none; 
+} 
+
+#articulosprincipales { 
+  float: left; 
+  width: 680px;
+  margin-left: 200px;
+  margin-top: -10px;
+  background-color: rgba(144, 251, 255, 0.438); 
+  box-shadow: rgb(86, 104, 131) 10px 10px 20px 10px;
+  border-radius: 10px; 
+} 
+
+#articulosprincipales2 { 
+  float: left; 
+  width: 680px;
+  margin-left: 200px;
+  margin-top: 45px;
+  background-color: rgba(144, 251, 255, 0.438); 
+  box-shadow: rgb(86, 104, 131) 10px 10px 20px 10px;
+  border-radius: 10px; 
+}
+
+.contenedor{
+  width:960px;
+  margin:auto;
+  padding-top:30px;
+}
+
+#infoadicional { 
+  margin-top: -1725px;
+  margin-left: 550px;
+  margin-right: -350px;
+  float: right; 
+  width: 260px; 
+  padding: 20px; 
+  background-color: #7af0ff97; 
+  border-radius: 10px; 
+} 
+
+#infoadicional h1 { 
+  font: bold 18px Arial, sans-serif; 
+  color: #333333; 
+  margin-bottom: 15px; 
+} 
+
+#infoadicional p {
+  font: 14px Arial, sans-serif;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.recuperar { 
+  clear: both; 
+} 
+
+article { 
+  position: relative; 
+  padding: 0px 40px 40px 80px; 
+  margin-bottom: 20px;
+} 
+
+article time { 
+  display: block; 
+  position: absolute; 
+  top: -5px; 
+  left: 0px; 
+  margin-left: -60px;
+  width: 75px; 
+  padding: 10px 5px; 
+  background-color: #094660; 
+  box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7); 
+  border-radius: 5px; 
+} 
+
+.numerodia { 
+  font: bold 28px Verdana, sans-serif; 
+  color: #FFFFFF; 
+  text-align: center; 
+} 
+
+.nombredia { 
+  font: 12px Verdana, sans-serif; 
+  color: #FFFFFF; 
+  text-align: center; 
+} 
+
+article h1 { 
+  margin-bottom: 15px; 
+  font: bold 26px Georgia, sans-serif; 
+  color: #094660;
+} 
+
+article p { 
+  font: 16px Georgia, sans-serif; 
+  line-height: 1.6;
+  color: #333333;
+} 
+
+figure { 
+  margin: 15px 0px; 
+} 
+
+figure img { 
+  padding: 5px; 
+  border: 1px solid #3080c6; 
+  max-width: 100%;
+  height: auto;
+} 
+
+#pielogo { 
+  width: 96%; 
+  padding: 2%; 
+  background-color: #0F76A0; 
+  margin-top: 1850px;
+  margin-left: -960px;
+} 
+
+#pielogo > div { 
+  width: 960px; 
+  margin: 0px auto; 
+  background-color: #91b8f3; 
+  border-radius: 10px; 
+} 
+
+.seccionpie { 
+  float: left; 
+  width: 27.33%; 
+  padding: 3%; 
+} 
+
+.seccionpie h1 { 
+  font: bold 20px Arial, sans-serif; 
+  color: #094660;
+  margin-bottom: 10px;
+} 
+
+.seccionpie p { 
+  margin-top: 5px; 
+} 
+
+.seccionpie a { 
+  font: bold 16px Arial, sans-serif; 
+  color: #444444; 
+  text-decoration: none; 
+} 
+
+.seccionpie a:hover {
+  text-decoration: underline;
+}
+
+#listamenu > li { 
+  position: relative; 
+  display: inline-block;
+  width: 150px; 
+  height: 35px; 
+  padding: 15px 10px 0px 10px; 
+  margin-right: 5px;
+  text-align: center; 
+} 
+
+#listamenu li > ul { 
+  display: none; 
+  position: absolute; 
+  top: 50px;
+  left: 0px; 
+  width: 169px; 
+  border-radius: 0px 0px 5px 5px; 
+  list-style: none; 
+  z-index: 9999;
+}
+
+#listamenu li > ul > li { 
+  width: 140px; 
+  height: 50px; 
+  padding-top: 15px; 
+  padding-left: 10px; 
+} 
+
+#listamenu li:hover ul { 
+  display: block; 
+}
+
+.menu-juegos{
+    position: relative;
+    font: bold 18px Arial, sans-serif; 
+  color: #333333;
+}
+
+.lista-juegos{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 210px;
+    height: 250px;
+
+    overflow-y: auto;
+
+    background: #9FC8D9;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+
+    z-index: 9999; 
+}
+
+.menu-juegos:hover .lista-juegos{
+    display: block;
+}

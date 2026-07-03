@@ -1,0 +1,73 @@
+/* Scroll snap utilities for mobile lists */
+:root {
+  --snap-max-height: 60vh;
+}
+
+/* Apply to list containers in nav or content */
+.snap-container,
+.lista-juegos,
+.lista-informacion {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Vertical snap (default) */
+.snap-vertical {
+  overflow-y: auto;
+  max-height: var(--snap-max-height);
+  scroll-snap-type: y mandatory;
+}
+
+.snap-horizontal {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.snap-vertical > ul,
+.snap-horizontal > ul,
+.lista-juegos > ul,
+.lista-informacion > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.snap-item,
+.lista-juegos li,
+.lista-informacion li {
+  scroll-snap-align: start;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 12px 16px;
+}
+
+/* Make links full-size tappable */
+.snap-item a,
+.lista-juegos li a,
+.lista-informacion li a {
+  display: block;
+  padding: 8px 6px;
+}
+
+/* Optional tiny visual hint for touch devices */
+@media (max-width: 800px) {
+  .snap-vertical { overscroll-behavior: contain; }
+}
+
+/* Apply snap behavior automatically to menu lists on small screens */
+@media (max-width: 800px) {
+  .lista-juegos,
+  .lista-informacion {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 48vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .lista-juegos li,
+  .lista-informacion li {
+    scroll-snap-align: start;
+  }
+}
