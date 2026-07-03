@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Days Gone</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/PF.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Days Gone<br>Pilar Fundamental</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+              <li><a href="DG.html">Legado Days Gone</a></li>
+              <li><a href="CSE.html">&nbsp;Secuela&nbsp;</a></li>
+              <li><a href="ADAP.html">&nbsp;Adaptación&nbsp;</a></li>
+              <li><a href="ET.html">Experiencia Técnica</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/DGZ.jpg" alt="Days Gone">
+            </div>
+            <div class="tarjeta-atras"><br>
+                <h1>Un Pilar Fundamental para el Futuro</h1><br>
+                <p>Aunque *Days Gone 2* parece improbable en el futuro cercano, el impacto de la obra es innegable. Las lecciones aprendidas por Bend Studio sobre la gestión de grandes masas de enemigos y el equilibrio entre supervivencia y combate de acción se han filtrado en la cultura de desarrollo de Sony. El juego demostró que hay un mercado masivo para experiencias de mundo abierto enfocadas en un tono maduro y sin elementos de "servicio en vivo" o multijugador forzado.</p><br>
+                <p>El legado de Deacon St. John es el de un héroe atípico: un hombre roto que no busca salvar el mundo, sino simplemente mantener una promesa. Esta humanidad, sumada a una mecánica de conducción que todavía se siente como una de las mejores del género, asegura que el juego seguirá siendo un referente en el futuro, independientemente de si la franquicia recibe una nueva entrega o se queda como una pieza singular en la historia de PlayStation.</p><br>
+                <p>En 2026, *Days Gone* no es solo un juego de zombies; es un estudio sobre la perseverancia frente a la adversidad y un ejemplo de cómo una obra puede ser redimida por su propia comunidad a través de los años. Aunque su futuro sea incierto, la marca ha dejado una huella profunda, siendo hoy un título que todo nuevo jugador de PlayStation debería experimentar al menos una vez para entender el potencial del survival horror de mundo abierto.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Days Gone: impacto y legado</h1>
+        <p><strong>Innovación narrativa:</strong> Days Gone combinó el horror de hordas con un viaje personal, explorando la soledad, la culpa y la familia perdida de Deacon St. John. Su enfoque humano lo distinguió de otros juegos de zombies y creó una conexión emocional potente con los jugadores.</p>
+        <p><strong>Revolución técnica:</strong> Bend Studio construyó un motor capaz de simular grandes hordas y un mundo abierto dinámico, donde el clima y el terreno afectan el comportamiento de los engendros. Esto puso de relieve la capacidad de PlayStation para crear experiencias de supervivencia tácticas y tensionantes.</p>
+        <p><strong>Legado de culto:</strong> A pesar de un lanzamiento con problemas, la comunidad lo adoptó como un clásico moderno, apoyando parches, mejoras de PC y ediciones optimizadas. En 2026, Days Gone es reconocido como un ejemplo de redención post-lanzamiento y una pieza clave del catálogo de PlayStation.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/DG.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

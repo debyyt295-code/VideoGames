@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Uncharted</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/IyT.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Uncharted<br>Innovación Técnica</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="UC.html">Orígenes</a></li>
+                <li><a href="EN.html">Evolución Narrativa</a></li>
+                <li><a href="Crr.html">Cierre</a></li>
+                <li><a href="S-O.html">Spin-offs</a></li>
+                <li><a href="EXP.html">Expansión Multimedia</a></li>
+                <li><a href="CyF.html">El Cine y El Futuro</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/UnchartedGA.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>Innovación Técnica: El Estándar de la Industria</h1><br>
+                <p>Uncharted fue pionero en la implementación de la captura de movimiento integral. Antes de la saga, las voces se grababan en una cabina y los movimientos se hacían por separado. Naughty Dog cambió esto al poner a los actores en trajes de captura mientras actuaban la escena completa en un set real, permitiendo que las expresiones faciales fueran grabadas simultáneamente con los diálogos y el movimiento corporal.</p><br>
+                <p>Esta técnica, conocida como "Performance Capture", permitió una expresividad que era imposible en otras producciones. Los actores Nolan North (Nate), Emily Rose (Elena) y Richard McGonagle (Sully) no solo pusieron su voz, sino que se convirtieron en los personajes. Esto dio lugar a interacciones naturales, donde una mirada, una pausa o una sonrisa durante un tiroteo se sentían genuinas y no coreografiadas.</p><br>
+                <p>El uso del "In-game Cinematics" fue otro pilar técnico. A diferencia de otros estudios que usaban videos pre-renderizados para las cinemáticas, Naughty Dog utilizaba el mismo motor del juego. Esto permitía que, al terminar una secuencia de video, el jugador tomara el control de Nathan Drake instantáneamente, sin que hubiera una pantalla de carga, creando una experiencia inmersiva y sin cortes.</p><br>
+                <p>La IA enemiga de la saga también fue un modelo de estudio. En la última entrega, los enemigos desarrollaron la capacidad de "flanquear", buscar refugio dinámicamente y comunicarse entre sí según las acciones del jugador. Esto obligó a que la jugabilidad pasara de ser un simple "dispara y avanza" a un juego de táctica donde el posicionamiento y el uso del escenario eran vitales para sobrevivir.</p><br>
+                <p>Finalmente, los logros de optimización técnica de la saga han servido para educar a generaciones de desarrolladores. La forma en que gestionaban la memoria, el streaming de texturas y el diseño de los niveles para ocultar los límites de carga es considerada hoy un caso de estudio obligatorio en cualquier carrera universitaria de desarrollo de videojuegos, marcando el camino para el realismo que vemos en juegos actuales.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Uncharted y su impacto global</h1>
+        <p><strong>Desde sus inicios:</strong> Uncharted comenzó como una propuesta arriesgada para Sony, pero su éxito transformó la forma en que se concebían las franquicias exclusivas. A partir de 2007, el nombre Uncharted se asoció con aventuras modernas y diseños narrativos de primer nivel.</p>
+        <p><strong>De juegos a series:</strong> La franquicia ya tiene una película y hay conversaciones constantes sobre series o nuevas adaptaciones, lo que refleja su potencial como marca de entretenimiento masivo. Esta expansión mantiene el interés tanto de fans como de artistas y productores.</p>
+        <p><strong>Influencia perdurable:</strong> La saga dejó una huella profunda en el diseño narrativo de videojuegos y en la cultura de los desarrolladores, inspirando títulos posteriores a buscar protagonistas con personalidad, guiones pulidos y momentos cinematográficos inolvidables.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/Uncharted.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Uncharted</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/SyO.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Uncharted<br>Spin-off</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="UC.html">Orígenes</a></li>
+                <li><a href="EN.html">Evolución Narrativa</a></li>
+                <li><a href="Crr.html">Cierre</a></li>
+                <li><a href="EXP.html">Expansión Multimedia</a></li>
+                <li><a href="CyF.html">El Cine y El Futuro</a></li>
+                <li><a href="IT.html">Innovación Técnica</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/UnchartedSpin.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>Spin-offs y el Caso de The Lost Legacy</h1><br>
+                <p><i>The Lost Legacy</i> (2017) fue una prueba crucial: ¿podría Uncharted sobrevivir sin Nathan Drake? Al colocar a Chloe Frazer y Nadine Ross como protagonistas, Naughty Dog demostró que el universo era lo suficientemente rico como para sostener nuevas historias. Esta entrega se centró en la mitología hindú y en una relación de respeto mutuo que evolucionaba a medida que las dos ladronas avanzaban.</p><br>
+                <p>Chloe, un personaje que siempre fue ambiguo, obtuvo aquí el desarrollo que merecía. Aprendimos sobre su pasado, sus motivaciones y cómo su cinismo inicial se transformaba al enfrentar los peligros de la selva india. Nadine, por otro lado, aportó la disciplina militar y el pragmatismo que contrastaban perfectamente con la improvisación característica de Chloe.</p><br>
+                <p>Este juego también pulió las mecánicas de "caja de arena" que se vieron en el cuarto título. Se incluyó un mapa de los Ghats occidentales que era el más grande de toda la saga hasta la fecha, fomentando la exploración arqueológica y la resolución de puzzles opcionales que recompensaban al jugador con objetos históricos reales.</p><br>
+                <p>A pesar de ser una expansión técnica, tuvo un nivel de producción que superaba a la mayoría de los juegos completos del mercado. Se cuidaron los detalles históricos del Imperio Hoysala con una precisión académica sorprendente, colaborando con historiadores para asegurar que los templos y grabados se sintieran auténticos dentro del mundo fantástico del juego.</p><br>
+                <p>Finalmente, este título abrió las puertas a que el estudio explorara en el futuro historias alejadas de los protagonistas originales. Si bien Naughty Dog ha puesto la saga en pausa para centrarse en nuevas franquicias, <i>The Lost Legacy</i> dejó claro que la fórmula de Uncharted tiene vida propia, permitiendo que otros personajes brillen y que el legado de la exploración nunca se pierda del todo.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Uncharted y sus spin-offs</h1>
+        <p><strong>La prueba de The Lost Legacy:</strong> Este spin-off demostró que el mundo de Uncharted también funcionaba sin Nathan Drake, al poner a Chloe Frazer como protagonista. La jugabilidad mantuvo la acción intensa y el tono aventurero, mientras la narrativa exploraba nuevas motivaciones y relaciones.</p>
+        <p><strong>Importancia creativa:</strong> The Lost Legacy permitió a Naughty Dog experimentar con personajes femeninos fuertes y una historia más compacta. Fue clave para mostrar que la saga podía diversificarse sin perder su identidad de aventura cinematográfica.</p>
+        <p><strong>Legado del spin-off:</strong> Aunque la serie principal se pausó después de 2016, este título reforzó la idea de que Uncharted podía seguir vivo en diferentes formatos y con nuevos protagonistas.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/Uncharted.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

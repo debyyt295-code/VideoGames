@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Prince of Persia</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/xam.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Prince of Persia<br>Experimentación Artística y Multimedia</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+              <li><a href="POP.html">El Orígen</a></li>
+              <li><a href="T-A.html">Trilogía de las Arenas</a></li>
+              <li><a href="RE.html">El Regreso a la Excelencia</a></li>
+              <li><a href="ITF.html">Innovación Técnica y el Futuro</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/pop.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>Experimentación Artística y Multimedia (2008-2010)</h1>
+                <p>En 2008, Ubisoft presentó una versión pictórica y "cel-shading" que parecía una obra de arte viviente. El Príncipe, acompañado por la maga Elika, exploraba un mundo abierto interconectado donde la muerte había sido eliminada del flujo de juego. Fue una apuesta artística valiente que priorizó la narrativa visual y la belleza de un mundo corrupto por la oscuridad, diferenciándose de la acción frenética de años anteriores.</p><br>
+                <p>Paralelamente, la marca dio el salto al cine en 2010 con una superproducción protagonizada por Jake Gyllenhaal. Aunque el filme tomó libertades creativas, logró capturar la grandiosidad visual de las localizaciones persas y la espectacularidad de los efectos especiales basados en la manipulación de la arena, sirviendo como un vehículo masivo de marketing que mantuvo al Príncipe en la conciencia colectiva global.</p><br>
+                <p>Este periodo fue vital para demostrar que *Prince of Persia* no era una propiedad fija, sino una idea capaz de adaptarse a diferentes estilos visuales y medios. Ya fuera a través de la belleza estática de un cuadro en movimiento en consolas o el espectáculo de gran presupuesto en el cine, la franquicia probó su versatilidad para reinventarse sin perder la esencia aventurera que Mechner concibió originalmente.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Experimentación artística y expansión multimedia</h1>
+        <p><strong>Estilo visual innovador:</strong> El dibujo cel-shaded de <i>Prince of Persia</i> mostró que la saga podía explorar un estilo artístico distinto sin perder su esencia aventurera.</p>
+        <p><strong>El salto al cine:</strong> La película de 2010 amplió la presencia de la franquicia, llevando la historia del Príncipe a audiencias que no conocían los videojuegos.</p>
+        <p><strong>Versatilidad temática:</strong> Esta etapa demostró que Prince of Persia no era solo una serie de juegos, sino una marca capaz de adaptarse a diferentes lenguajes narrativos y estéticos.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/POP.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

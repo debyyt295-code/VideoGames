@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Super Mario Bros</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/C&E.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Super Mario Bros<br>Consolidación y expansión</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li> 
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../TLOU/TLOU.html">The Last of Us</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="SMB.html">Historia y Legado</a></li>
+                <li><a href="R3DM.html">Revolucion 3D</a></li>
+                <li><a href="DRLM.html">La revolución 3D y la era moderna</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>  
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/Marbro.jpg" alt="SUPER MARIO BROS">
+            </div>
+            <div class="tarjeta-atras">
+                <br>
+                <h2>La Era Dorada: Consolidación y Expansión (1985-1995)</h2><br>
+                <p>El lanzamiento de <i>Super Mario Bros.</i> para la consola NES en 1985 marcó un antes y un después en la industria. Este juego fue el gran impulsor de la consola, introduciendo el concepto de desplazamiento lateral o <i>scroll</i>, lo que permitía crear niveles mucho más extensos y complejos. Aquí se cimentó el universo de Mario: la Princesa Peach, Bowser como el villano principal, y la introducción de objetos icónicos como el hongo, la flor de fuego y los enemigos Goombas y plantas piraña.</p><br>
+                <p>La saga no se detuvo allí. <i>Super Mario Bros. 2</i> permitió por primera vez controlar a cuatro personajes distintos con habilidades únicas. Más tarde, <i>Super Mario Bros. 3</i> expandió la fórmula introduciendo un mapa de mundo dinámico y el traje de mapache. Con la llegada de la Super Nintendo (SNES), <i>Super Mario World</i> definió la excelencia en 2D al incluir a Yoshi, no solo como una montura, sino como un elemento táctico que permitía comer enemigos y transformar el entorno. Además, se exploraron otras facetas con el nacimiento de su rival, Wario, en <i>Super Mario Land 2</i>, y la precuela <i>Yoshi's Island</i>, que mediante un estilo artístico pictórico narró la infancia de los protagonistas.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional"> 
+        <h2>Información adicional</h2> 
+        <p><strong>Consolidación:</strong> Super Mario Bros. definió la fórmula de plataformas con niveles memorables, diseño simple y una experiencia muy accesible.</p> 
+        <p><strong>Expansión:</strong> Títulos como Super Mario Bros. 2, Super Mario Bros. 3, Super Mario World y Yoshi's Island ampliaron el universo y los personajes.</p> 
+        <p><strong>Impacto:</strong> Esta etapa consolidó a Mario como la mascota central de Nintendo y elevó la saga a niveles de culto mundial.</p> 
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo"> 
+    <div> 
+      <section class="seccionpie"> 
+        <h1>Contenidos</h1> 
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p>   
+      </section> 
+      <section class="seccionpie"> 
+        <h1>Soporte</h1> 
+        <p><a href="../contacto.html">Contacto</a></p> 
+      </section> 
+      <section class="seccionpie"> 
+        <address>El Mundo de Aventuras</address> 
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small> 
+      </section> 
+      <div class="recuperar"></div> 
+    </div> 
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/SuperMarioBros.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  
+  <br><br>
+
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+
+  <p id="tiempo">0:00 / 0:00</p>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>
+
+
+

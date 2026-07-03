@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Banjo-Kazooie</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/B-K.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Banjo-Kazooie<br>LA AVENTURA DE OSO Y PÁJARO</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../TLOU/TLOU.html">The last of us</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="D-E.html">Era Dorada y Legado</a></li>
+                <li><a href="M-R.html">Era Moderna y Reencuentro</a></li>
+                <li><a href="DT&DJ.html">Datos técnicos y diseño de juego</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>  
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/Bj-Kz.jpg" alt="Banjo-kazooie">
+            </div>
+            <div class="tarjeta-atras"><br>
+                <h1>BANJO-KAZOOIE: LA AVENTURA DE OSO Y PÁJARO</h1><br><br>
+                <h2>Los Orígenes: De "Project Dream" a Banjo</h2><br>
+                <p>A mediados de los 90, Rare, el legendario estudio británico, comenzó el desarrollo de un juego ambicioso para Super Nintendo llamado 'Project Dream'. Inicialmente, iba a ser una aventura protagonizada por un niño llamado Edison, pero tras ver el éxito de Super Mario 64, Rare decidió dar un giro radical. El proyecto se transformó en una aventura 3D para la Nintendo 64, sustituyendo al protagonista humano por un oso llamado Banjo.</p><br><br>
+                <p>El equipo creativo, liderado por Gregg Mayles, buscaba un dúo dinámico que se complementara: Banjo aportaría la fuerza física, mientras que Kazooie, un pájaro atrevido escondido en su mochila, proporcionaría velocidad y habilidades aéreas. El juego se lanzó en 1998, convirtiéndose instantáneamente en un referente del género de plataformas 3D gracias a su diseño de mundos interconectados y un humor satírico muy marcado.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional"> 
+        <h2>Información adicional</h2> 
+        <p><strong>Orígenes:</strong> Banjo-Kazooie nació como un proyecto ambicioso de Rare para la Nintendo 64 y se convirtió en uno de los grandes clásicos del género.</p> 
+        <p><strong>Personajes:</strong> Banjo, un oso, y Kazooie, un pájaro, formaron un dúo memorable gracias a su química, humor y habilidades complementarias.</p> 
+        <p><strong>Legado:</strong> El juego ayudó a definir la fórmula de las plataformas 3D y sigue siendo recordado por su creatividad y su estilo único.</p> 
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo"> 
+    <div> 
+      <section class="seccionpie"> 
+        <h1>Contenidos</h1> 
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p>  
+      </section> 
+      <section class="seccionpie"> 
+        <h1>Soporte</h1> 
+        <p><a href="../contacto.html">Contacto</a></p> 
+      </section> 
+      <section class="seccionpie"> 
+        <address>El Mundo de Aventuras</address> 
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small> 
+      </section> 
+      <div class="recuperar"></div> 
+    </div> 
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/ThemeBanjo-Kazooie.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  
+  <br><br>
+
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+
+  <p id="tiempo">0:00 / 0:00</p>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>The Last of Us</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/viadtlou.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>The Last of Us<br>Videojuegos y adaptaciones</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="TLOU.html">&nbsp;Historia&nbsp;</a></li>
+                <li><a href="Origen.html">&nbsp;Origen&nbsp;</a></li>
+                <li><a href="PJTLOU.html">Primer juego</a></li>
+                <li><a href="PPTLOU.html">Personajes principales</a></li>
+                <li><a href="Evolucion.html">Evolución</a></li>
+                <li><a href="SECOMU.html">Serie, cómic y música</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/tlou american dream.jpg" alt="The Last of Us">
+            </div>
+            <div class="tarjeta-atras">
+                <br>
+                <h1>Videojuegos y adaptaciones</h1><br><br>
+                <p>The Last of Us Part II amplió la historia del universo con nuevas perspectivas, un tono más oscuro y una exploración más profunda del conflicto humano. Su impacto fue inmediato y generó debates en la comunidad debido a su enfoque emocional y narrativo.</p><br><br>
+                <p>La serie de HBO, por su parte, convirtió la franquicia en un fenómeno internacional. A través de esta adaptación, muchas personas que nunca habían jugado a los videojuegos pudieron conocer y apreciar el mundo de Joel y Ellie.</p><br><br>
+                <p>Esta combinación de videojuegos, serie y material adicional demuestra que The Last of Us es mucho más que una sola historia: es una experiencia cultural que sigue creciendo con el tiempo.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Momento histórico</h1>
+        <p><strong>Part II:</strong> Expande la narrativa con nuevas perspectivas.</p>
+        <p><strong>Serie HBO:</strong> Conecta con nuevas audiencias.</p>
+        <p><strong>Legado:</strong> Se consolida como una obra transmedia.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/tlou.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

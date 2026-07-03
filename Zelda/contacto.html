@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Aventuras Gamer</title>
+  <link rel="stylesheet" href="../../CSS/contacto.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow"><button onclick="window.history.back()">Videojuegos de aventura</button></p>
+      <h1>Hablemos de videojuegos de aventura</h1>
+      <p>Si quieres compartir ideas, colaborar o simplemente dejar tu opinión sobre este proyecto, completa el formulario y me pondré en contacto contigo.</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="panel">
+      <h2>Envíame un mensaje</h2>
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="interes">¿Qué te interesa?</label>
+          <select id="interes" name="interes">
+            <option value="">Selecciona una opción</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame en qué te puedo ayudar..." required></textarea>
+        </div>
+
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <aside class="panel">
+      <h2>Información de contacto</h2>
+      <ul class="lista-contacto">
+        <li><strong>Correo:</strong> contacto@aventurasgamer.com</li>
+        <li><strong>Teléfono:</strong> +504 8854 1294</li>
+      </ul>
+
+      <div class="tarjeta">
+        <h3>¿Por qué escribir?</h3>
+        <p>Tu mensaje me ayuda a mejorar este proyecto, recibir feedback y compartir más contenido sobre los grandes mundos de aventura.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Diseñado para una experiencia profesional y elegante, inspirada en los mundos de los juegos de aventura.</p>
+  </footer>
+</body>
+</html>

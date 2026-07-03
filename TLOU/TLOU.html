@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>The Last of Us</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/TLOU.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>The Last of Us</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="Origen.html">Origen</a></li>
+                <li><a href="PJTLOU.html">Primer juego</a></li>
+                <li><a href="PPTLOU.html">Personajes principales</a></li>
+                <li><a href="Evolucion.html">Evolución</a></li>
+                <li><a href="SECOMU.html">Serie, cómic y música</a></li>
+                <li><a href="VIAD.html">Videojuegos y adaptaciones</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/the art of the last of us.jpg" alt="The Last of Us">
+            </div>
+            <div class="tarjeta-atras">
+                <br>
+                <h1>THE LAST OF US: HISTORIA</h1><br>
+                <br>
+                <p>The Last of Us es una de las sagas más importantes del videojuego moderno. Desde su lanzamiento en 2013, ha conquistado a millones de jugadores gracias a su mezcla de supervivencia, narrativa emocional y diseño visual excepcional.</p><br><br>
+                <p>La historia sigue a Joel y Ellie en un mundo devastado por una infección que convirtió a gran parte de la humanidad en criaturas hostiles. A través de sus viajes, el juego explora temas de amor, pérdida, lealtad y esperanza.</p><br><br>
+                <p>El éxito del primer juego llevó a la creación de una secuela, The Last of Us Part II, y a una adaptación televisiva que amplió aún más su impacto cultural. Hoy es una de las franquicias más reconocidas de la industria.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Momento histórico</h1>
+        <p><strong>2013:</strong> El primer juego cambió la forma de ver los videojuegos narrativos.</p>
+        <p><strong>2020:</strong> La secuela consolidó su relevancia con una historia aún más intensa y compleja.</p>
+        <p><strong>2023:</strong> La serie de HBO elevó su presencia global y atrajo a nuevas audiencias.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/tlou.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

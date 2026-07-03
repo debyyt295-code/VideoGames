@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Uncharted</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/CRR.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Uncharted<br>Cierre</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="UC.html">Orígenes</a></li>
+                <li><a href="EN.html">Evolución Narrativa</a></li>
+                <li><a href="S-O.html">Spin-offs</a></li>
+                <li><a href="EXP.html">Expansión Multimedia</a></li>
+                <li><a href="CyF.html">El Cine y El Futuro</a></li>
+                <li><a href="IT.html">Innovación Técnica</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/Uncharted3.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>El Cierre Épico: A Thief's End</h1><br>
+                <p>Para <i>Uncharted 4: A Thief's End</i> (2016), Naughty Dog enfrentó el reto de cerrar la historia de un personaje al que el público adoraba. La narrativa saltó años en el futuro, presentando a un Nathan Drake retirado, luchando contra el deseo de volver a la vida de peligro. La madurez del guion se sintió desde el primer minuto, tratando temas como la responsabilidad, la familia y el costo de la ambición.</p><br>
+                <p>La introducción de Sam Drake, el hermano perdido de Nate, permitió explorar una dinámica familiar que hasta entonces era inexistente. Este conflicto forzó a Nate a decidir entre su estabilidad con Elena Fisher y el riesgo de una última aventura pirata por la utopía de Libertalia. Fue, en muchos sentidos, una deconstrucción del mito del héroe aventurero.</p><br>
+                <p>A nivel jugable, esta entrega implementó mapas mucho más amplios, permitiendo al jugador utilizar un vehículo (4x4) para explorar zonas enormes con total libertad. Las mecánicas de combate se refinaron con el uso del gancho, permitiendo combates verticales que aprovechaban la verticalidad del terreno de forma magistral, cambiando totalmente la estrategia defensiva.</p><br>
+                <p>Gráficamente, el título fue un salto gigante al aprovechar la potencia de la PS4. Los detalles faciales permitieron transmitir emociones sutiles, como el miedo o la duda, sin necesidad de que los personajes pronunciaran una sola palabra. La iluminación global y las texturas de los materiales (lodo, piedra, ropa mojada) se convirtieron en el nuevo estándar de la industria.</p><br>
+                <p>El final del juego fue recibido como uno de los cierres más satisfactorios en la historia de los videojuegos. No hubo muertes innecesarias ni giros forzados, sino una resolución humana a un problema humano. Nathan Drake dejó el mapa para vivir una vida real, dejando un legado que definió la era de la PlayStation 4 como una de las máquinas más importantes para la narrativa interactiva.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>El universo ampliado de Uncharted</h1>
+        <p><strong>Origen transmedia:</strong> Más allá de los videojuegos, Uncharted se expandió a cómics, novelas y libros de arte que profundizan en el pasado de Nathan Drake y los personajes secundarios. Estos materiales ayudaron a mantener el interés entre lanzamientos principales.</p>
+        <p><strong>El peso del personaje:</strong> La franquicia convirtió a Nathan Drake en un icono del entretenimiento moderno, siendo comparado con aventureros clásicos del cine. Esto creó una base de fans global que no solo valoraba la jugabilidad, sino también la historia y el carisma del elenco.</p>
+        <p><strong>Presencia en la cultura popular:</strong> Frases, situaciones y escenas de Uncharted han sido referenciadas en otros medios, desde programas de televisión hasta parodias en internet, confirmando su lugar en la cultura popular del videojuego.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/Uncharted.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Legend Of Zelda</title>
+    <link rel="stylesheet" href="../../CSS/PPtLoz.css">
+    <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+    <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>The Legend of Zelda<br>Personajes Principales</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li> 
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../TLOU/TLOU.html">The Last of Us</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="TLOZ.html">Historia</a></li>
+                <li><a href="O&C.html">Origen y creación</a></li>
+                <li><a href="PJtloz.html">Primer Juego</a></li>
+                <li><a href="TFDCHRRZ.html">Trifuerza, D.C, Hyrule & Razas</a></li>
+                <li><a href="EvolucionSaga.html">Evolución de la saga</a></li>
+                <li><a href="CROESMU.html">C. Espada & Música</a></li>
+                <li><a href="VECUAC.html">V.E, C. & A.</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>  
+        </div>
+    </nav>
+    <div id="gif-fondo">
+
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/Zeldaworlds.jpg" alt="The Legend of Zelda">
+            </div>
+            <div class="tarjeta-atras">
+                <br>
+                <h2>Los personajes principales</h2>
+                <br>
+                <p><b>Link:</b> Link es el protagonista principal de la serie. Es un joven valiente elegido por el destino para proteger el reino de Hyrule. A pesar de que casi nunca habla, Link representa al jugador dentro del juego. A lo largo de la saga existen distintas versiones de Link, ya que el personaje renace en diferentes épocas.</p><br>
+                <p>Sus características principales son: <b>Gran valentía, Habilidad con la espada, Espíritu de sacrificio, Protección del reino.</b></p><br>
+                <p><b>La princesa Zelda:</b> Zelda es la princesa del reino de Hyrule y posee poderes sagrados relacionados con las diosas creadoras. En algunos juegos necesita ser rescatada, mientras que en otros ayuda activamente al héroe. Con el paso de los años se convirtió en uno de los personajes femeninos más importantes de los videojuegos.</p><br>
+                <p><b>Ganon y Ganondorf:</b> Ganondorf es el principal villano de la serie. Es el rey de los Gerudo y busca obtener el poder absoluto mediante la Trifuerza. Cuando obtiene grandes cantidades de poder se transforma en Ganon, una poderosa bestia demoníaca. Su objetivo suele ser conquistar Hyrule y dominar el mundo.</p>
+            </div>
+        </div>
+    </div> 
+    <aside id="infoadicional"> 
+        <h1>Momento histórico</h1> 
+        <p><strong>Primer anuncio:</strong> La llegada de The Legend of Zelda generó enormes expectativas por la propuesta de una aventura nueva y emocionante.</p> 
+        <p><strong>Reacción de la audiencia:</strong> Muchos jugadores sintieron que estaban frente a algo especial, un juego diferente a lo que conocían.</p> 
+        <p><strong>Legado:</strong> Con el tiempo, las historias y personajes de Zelda se volvieron icónicos para todos los fanáticos.</p> 
+      </aside>   
+    </div>
+    <footer id="pielogo"> 
+    <div> 
+      <section class="seccionpie"> 
+        <h1>Contenidos</h1> 
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p>   
+      </section> 
+      <section class="seccionpie"> 
+        <h1>Soporte</h1> 
+        <p><a href="contacto.html">Contacto</a></p> 
+      </section> 
+      <section class="seccionpie"> 
+        <address>El Mundo de Aventuras</address> 
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small> 
+      </section> 
+      <div class="recuperar"></div> 
+    </div> 
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/lost woods the legend of zelda.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  
+  <br><br>
+
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+
+  <p id="tiempo">0:00 / 0:00</p>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Super Mario Bros</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/Mario Bros.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Super Mario Bros</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li> 
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../TLOU/TLOU.html">The Last of Us</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="CyE.html">Consolidación y expansión</a></li>
+                <li><a href="R3DM.html">Revolucion 3D</a></li>
+                <li><a href="DRLM.html">La revolución 3D y la era moderna</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>  
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/SMB.jpg" alt="SUPER MARIO BROS">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>¡IT'S-A ME, MARIO! HISTORIA Y LEGADO</h1>
+                <h2>El Nacimiento del "Jumpman" y Los Inicios (1981-1984)</h2>
+                <p>A principios de la década de los 80, Nintendo atravesaba una crisis severa tras el fracaso del juego Radar Scope en los arcades de Estados Unidos. El presidente de la compañía, Hiroshi Yamauchi, encomendó al joven diseñador Shigeru Miyamoto la creación de un nuevo título que pudiera salvar la división de arcades. Fue así como en 1981 debutó el juego <i>Donkey Kong</i>, donde el protagonista, un carpintero, era conocido originalmente como "Jumpman".</p>
+                <p>El diseño de este personaje, que más tarde conoceríamos como Mario, estuvo dictado por las limitaciones técnicas de la época. La gorra roja se añadió porque era imposible animar el movimiento del cabello con los pocos píxeles disponibles. El bigote fue implementado para que la boca y la nariz fueran distinguibles, mientras que el overol de colores brillantes se eligió para que sus extremidades fueran claras y diferenciables del torso durante la acción. El nombre "Mario" se adoptó posteriormente tras un enfrentamiento con el dueño de las oficinas de Nintendo en América, Mario Segale, quien exigía el pago de un alquiler atrasado. En 1983, con el lanzamiento del título <i>Mario Bros.</i>, el personaje dejó atrás su faceta de carpintero para convertirse oficialmente en fontanero, introduciendo a su hermano Luigi y estableciendo la mecánica fundamental de derrotar enemigos saltando sobre ellos.</p><br>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional"> 
+        <h2>Información adicional</h2> 
+        <p><strong>Orígenes:</strong> Mario nació en 1981 como Jumpman en Donkey Kong y luego se volvió el personaje más famoso de Nintendo.</p> 
+        <p><strong>Expansión:</strong> Con el paso de los años, la saga se extendió a consolas, spin-offs y nuevas mecánicas que consolidaron su legado.</p> 
+        <p><strong>Legado:</strong> Hoy Super Mario Bros. es un símbolo global del videojuego, con millones de fans y una influencia enorme en la cultura pop.</p> 
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo"> 
+    <div> 
+      <section class="seccionpie"> 
+        <h1>Contenidos</h1> 
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p>  
+      </section> 
+      <section class="seccionpie"> 
+        <h1>Soporte</h1> 
+        <p><a href="../contacto.html">Contacto</a></p> 
+      </section> 
+      <section class="seccionpie"> 
+        <address>El Mundo de Aventuras</address> 
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small> 
+      </section> 
+      <div class="recuperar"></div> 
+    </div> 
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/SuperMarioBros.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  
+  <br><br>
+
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+
+  <p id="tiempo">0:00 / 0:00</p>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

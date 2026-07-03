@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>The Legend of Zelda</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/The Legend Of Zelda.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>The Legend of Zelda</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li> 
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Prince/POP.html">Prince of Persia</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../TLOU/TLOU.html">The Last of Us</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="O&C.html">Origen y creación</a></li>
+                <li><a href="PJtloz.html">Primer Juego</a></li>
+                <li><a href="PPTLOZ.html">Personajes Principales</a></li>
+                <li><a href="TFDCHRRZ.html">Trifuerza, D.C, Hyrule & Razas</a></li>
+                <li><a href="EvolucionSaga.html">Evolución de la Saga</a></li>
+                <li><a href="CROESMU.html">C. Espada & Música</a></li>
+                <li><a href="VECUAC.html">V.E, C. & A.</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>  
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/TheLegendOfZelda.jpg" alt="The Legend of Zelda">
+            </div>
+            <div class="tarjeta-atras">
+                <br>
+                <h2>THE LEGEND OF ZELDA: HISTORIA, CREACIÓN, EVOLUCIÓN Y LEGADO (1986-2026)</h2>
+                <br>
+                <h2>Introducción</h2><br>
+                <p>The Legend of Zelda es una de las franquicias de videojuegos más importantes y exitosas de toda la historia. Desde su debut en 1986, la serie ha logrado conquistar a millones de jugadores alrededor del mundo gracias a sus historias, personajes, exploración, música y mecánicas innovadoras.</p><br>
+                <p>La saga pertenece a Nintendo y fue creada por Shigeru Miyamoto y Takashi Tezuka. A lo largo de cuarenta años, Zelda ha evolucionado desde un sencillo juego de 8 bits hasta convertirse en una de las series más influyentes de la industria del entretenimiento.</p><br>
+                <p>Actualmente, la franquicia cuenta con numerosos videojuegos, millones de copias vendidas, una cronología compleja, personajes icónicos y una enorme comunidad de fanáticos.</p><br>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional"> 
+        <h1>Momento histórico</h1> 
+        <p><strong>1986:</strong> El primer juego de The Legend of Zelda llegó a Nintendo y sorprendió a los jugadores con un mundo abierto lleno de secretos.</p> 
+        <p><strong>Emoción inicial:</strong> Los fanáticos quedaron fascinados por la idea de explorar, descubrir mazmorras y vivir una aventura épica.</p> 
+        <p><strong>Legado:</strong> Desde entonces, cada anuncio de un nuevo juego generó expectación, porque Zelda siempre representó aventura, misterio y magia.</p> 
+      </aside>    
+    </div>
+    </main>
+    <footer id="pielogo"> 
+    <div> 
+      <section class="seccionpie"> 
+        <h1>Contenidos</h1> 
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p>   
+      </section> 
+      <section class="seccionpie"> 
+        <h1>Soporte</h1> 
+        <p><a href="contacto.html">Contacto</a></p> 
+      </section> 
+      <section class="seccionpie"> 
+        <address>El Mundo de Aventuras</address> 
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small> 
+      </section> 
+      <div class="recuperar"></div> 
+    </div> 
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/lost woods the legend of zelda.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  
+  <br><br>
+
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+
+  <p id="tiempo">0:00 / 0:00</p>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

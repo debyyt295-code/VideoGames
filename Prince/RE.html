@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Prince of Persia</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/re.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Prince of Persia<br>El Regreso a la Excelencia</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+              <li><a href="POP.html">El Orígen</a></li>
+              <li><a href="T-A.html">Trilogía de las Arenas</a></li>
+              <li><a href="XAM.html">Experimentación Artística y Multimedia</a></li>
+              <li><a href="ITF.html">Innovación Técnica y el Futuro</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/princeofpersia.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>El Regreso a la Excelencia: The Lost Crown (2024)</h1><br>
+                <p>El lanzamiento de *The Lost Crown* en 2024 fue un retorno triunfal a los orígenes 2D pero con una tecnología de vanguardia. Como un *Metroidvania* moderno, el juego introdujo poderes temporales complejos —como crear una copia de uno mismo o manipular el tiempo en mitad de los saltos— que transformaron cada sección de plataformas en un desafío intelectual de alta velocidad que exigía precisión milimétrica.</p><br>
+                <p>La historia de Sargon, un guerrero de los Inmortales, ofreció un nivel de reto brutal que fascinó a la crítica y a los fans más veteranos. Con un diseño de niveles intrincado y una fluidez de combate superior a casi cualquier otro título del género, Ubisoft demostró que el corazón del Príncipe siempre ha estado en las plataformas de alta dificultad donde la agilidad es la única forma de sobrevivir.</p><br>
+                <p>Este juego no fue un simple "retorno", sino una reinvención técnica que demostró que el 2D, cuando se ejecuta con la potencia actual, puede ofrecer una experiencia tan profunda e inmersiva como cualquier título 3D de mundo abierto. Fue la prueba definitiva de que la marca tiene la capacidad de liderar las tendencias de mercado manteniendo el espíritu de aventura acrobática que siempre la caracterizó.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>El regreso moderno</h1>
+        <p><strong>Renaissance a la esencia clásica:</strong> Con <i>The Lost Crown</i>, Ubisoft recuperó la claridad de los plataformas 2D, pero con una tecnología de hoy que ofreció un desafío profundo y satisfactoriamente moderno.</p>
+        <p><strong>Legado renovado:</strong> La entrega combinó lo mejor de los diseños antiguos con nuevas mecánicas de tiempo, reafirmando que la saga aún puede evolucionar sin perder su espíritu original.</p>
+        <p><strong>Impacto en los fans:</strong> Este retorno despertó el interés de los jugadores veteranos y nuevos, reavivando el legado del Príncipe y apuntando la franquicia hacia un futuro con más posibilidades.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/POP.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>

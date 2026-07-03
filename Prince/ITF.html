@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Prince of Persia</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" href="../../CSS/itf.css">
+  <link rel="stylesheet" href="../../CSS/scroll-snap.css">
+  <link rel="icon" type="image/png" href="../../Imagenes/mushroom.png">
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+        <h1>Prince of Persia<br>Innovación Técnica y el Futuro</h1>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+        <ul id="listamenu">
+            <li><a href="../index.html">Principal</a></li>
+            <li class="menu-juegos">VideoJuegos
+                <div class="lista-juegos">
+            <ul>
+            <li><a href="../Zelda/TLOZ.html">The Legend of Zelda</a></li>
+            <li><a href="../Mario/SMB.html">Super Mario Bros</a></li>
+            <li><a href="../Banjo/BK.html">Banjo-Kazooie</a></li>
+            <li><a href="../Uncharted/UC.html">Uncharted</a></li>
+            <li><a href="../DG/DG.html">Days Gone</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="menu-informacion">Más Información
+              <div class="lista-informacion">
+            <ul>
+                <li><a href="POP.html">El Orígen</a></li>
+              <li><a href="T-A.html">Trilogía de las Arenas</a></li>
+              <li><a href="XAM.html">Experimentación Artística y Multimedia</a></li>
+              <li><a href="RE.html">El Regreso a la Excelencia</a></li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+    </nav>
+    <main>
+    <div id="gif-fondo">
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta">
+            <div class="tarjeta-frente">
+                <img src="../../Imagenes/popclasic.jpg" alt="Uncharted">
+            </div>
+            <div class="tarjeta-atras">
+                <h1>Innovación Técnica y el Futuro (2026 y más allá)</h1><br>
+                <p>El impacto de *Prince of Persia* es incalculable: sin sus sistemas de parkour, sagas como *Assassin's Creed* no existirían tal como las conocemos. Técnicamente, la franquicia ha sido el banco de pruebas de Ubisoft para la gestión de partículas de arena, física de fluidos y sistemas de navegación, influyendo en el desarrollo de mundos abiertos modernos y en la forma en que los juegos AAA abordan la verticalidad.</p><br>
+                <p>Mirando hacia el 2026, la saga vive un momento de oro con rumores sobre el *remake* de *The Sands of Time*. Los fans esperan una reconstrucción total que use el hardware actual para recrear la Babilonia original con una fidelidad gráfica asombrosa, lo que permitiría a nuevas audiencias experimentar el título que cambió las reglas del juego hace más de dos décadas, consolidando su estatus como clásico eterno.</p><br>
+                <p>El futuro de la marca parece apuntar a la diversificación: el Príncipe puede existir tanto en la intensidad de los retos 2D como en la escala épica de las producciones 3D. Mientras la industria necesite juegos que premien la agilidad, la precisión y la libertad de movimiento, el *Prince of Persia* seguirá siendo, no solo una franquicia, sino un pilar fundamental en la educación de cualquier desarrollador de videojuegos moderno.</p>
+            </div>
+        </div>
+    </div>
+    <aside id="infoadicional">
+        <h1>Prince of Persia en el mundo actual</h1>
+        <p><strong>Influencia duradera:</strong> La serie sigue siendo uno de los pilares del diseño de juego acrobático y ha influido en franquicias contemporáneas que combinan acción, plataformas y narrativa.</p>
+        <p><strong>Rumores y expectativas:</strong> Con un posible remake de <i>The Sands of Time</i> y nuevas incursiones en diversos formatos, la franquicia mantiene su relevancia cultural décadas después de su primer lanzamiento.</p>
+        <p><strong>Legado educativo:</strong> Para muchos desarrolladores, Prince of Persia es un ejemplo temprano de cómo combinar estética, ritmo y narrativa en juegos de acción, y sigue siendo un título de referencia en cursos de diseño de videojuegos.</p>
+      </aside>
+    </div>
+    </main>
+    <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Contenidos</h1>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="../videos.html">Videos</a></p> 
+      </section>
+      <section class="seccionpie">
+        <h1>Soporte</h1>
+        <p><a href="../contacto.html">Contacto</a></p>
+      </section>
+      <section class="seccionpie">
+        <address>El Mundo de Aventuras</address>
+        <small>&copy; Historia de los Videojuegos de Aventura 2026</small>
+      </section>
+      <div class="recuperar"></div>
+    </div>
+  </footer>
+
+  <audio id="musica" loop>
+  <source src="../../Audios/POP.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+  <button onclick="togglePlay()" id="btn">Play</button>
+  <label>Vol:</label>
+  <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5" onchange="cambiarVolumen(this.value)">
+  <br><br>
+  <input type="range" id="barraMusica" min="0" max="100" value="0" step="1" style="width: 220px;">
+  <p id="tiempo">0:00 / 0:00</p>
+  <script src="../../JAVASCRIPT/script.js"></script>
+</div>
+</body>
+</html>
